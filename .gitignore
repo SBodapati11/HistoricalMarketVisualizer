@@ -116,6 +116,10 @@ pip-delete-this-directory.txt
 instance/
 .webassets-cache
 
+# Alembic stuff
+alembic/
+alembic.ini
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
