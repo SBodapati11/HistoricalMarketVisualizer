@@ -29,3 +29,11 @@ def get_user(username):
     with session_scope() as db_session:
         user = db_session.query(User).filter(User.username == username)[0]
     return format_user(user), 200
+
+# Delete a specific user
+@usersAPI.route('/users/<string:username>', methods=['DELETE'])
+def delete_user(username):
+    with session_scope() as db_session:
+        user = db_session.query(User).filter(User.username == username)[0]
+        db_session.delete(user)
+    return format_user(user), 200
