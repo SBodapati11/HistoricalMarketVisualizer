@@ -1,1 +1,1 @@
-# HistoricalMarketVisualizer
+# StockMarketFantasy
